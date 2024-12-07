@@ -22,7 +22,7 @@ function Hero() {
               HI There, <br /> I'm Alaaeldin{" "}
               <span className="text-blue-500">Abousamra</span>
               <p className="md:text-2xl text-xl mb-4">
-                Web Developer & Desinger
+                Web Developer & Designer
               </p>
               <p className="mb-4 text-lg">
                 I'm a passionate web developer with expertise in <br /> [React ,

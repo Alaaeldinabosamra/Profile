@@ -6,6 +6,7 @@ import Geine from "./sections/Genie.jsx";
 import Hero from "./sections/Hero.jsx";
 import About from "./sections/About.jsx";
 import Particle from "./components/Particle.jsx";
+import Projects from "./sections/Projects.jsx";
 function App() {
   return (
     <main className="max-w-7xl mx-auto relative">
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <About />
       <WorkExperience />
+      <Projects />
       <VideoCarousel />
       <Geine />
     </main>

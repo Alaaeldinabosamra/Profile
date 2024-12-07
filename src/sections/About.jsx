@@ -15,7 +15,7 @@ const About = () => {
             <h2 className="text-base text-white-600 font-semibold tracking-wide uppercase">
               About Me
             </h2>
-            <p className="mt-2 text-blue-600 leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-blue-700 leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               {aboutInfo.name}
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-400 lg:mx-auto">

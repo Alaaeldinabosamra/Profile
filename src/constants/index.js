@@ -35,7 +35,7 @@ export const workExperiences = [
     title:
       "Managed network infrastructure and ensured stable connectivity and handled Windows system maintenance and troubleshooting.",
     icon: "/assets/army.png",
-    animation: "Waving",
+    animation: "Greet",
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ export const workExperiences = [
     duration: "2021 - 2022",
     title: "Design logos and Posters",
     icon: "/assets/art.png",
-    animation: "Clap",
+    animation: "Like",
   },
 ];
 
@@ -118,3 +118,14 @@ export const moreInfo = {
   description:
     "Apart from coding, I am deeply passionate about exploring new technologies and staying up-to-date with the latest trends in web development. I thrive on continuous learning and always seek to enhance my skill set to deliver cutting-edge, impactful projects. Recently, I have been expanding my expertise in 3D web techniques to bring visually stunning, interactive experiences to the web. I am actively seeking opportunities for internships or full-time positions where I can apply my knowledge of web development and 3D design to create innovative solutions. My goal is to work in an environment where I can continue growing, collaborate with talented professionals.",
 };
+
+// projects
+export const projectJson = [
+  {
+    title: "Mockup Website",
+    desc: "using 3D Blender objects Macbook & Iphone X making nested sites in screens",
+    image: "/assets/mockup.png",
+    live: "https://mockup-blush.vercel.app/",
+    github: "https://github.com/Alaaeldinabosamra/Mockup.git",
+  },
+];
