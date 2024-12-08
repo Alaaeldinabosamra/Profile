@@ -15,7 +15,7 @@ const About = () => {
             <h2 className="text-base text-white-600 font-semibold tracking-wide uppercase">
               About Me
             </h2>
-            <p className="mt-2 text-blue-700 leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-blue-700 leading-8 font-extrabold tracking-tight text-blue-500 sm:text-4xl">
               {aboutInfo.name}
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-400 lg:mx-auto">
@@ -34,7 +34,7 @@ const About = () => {
                 <img src="" alt="" className="p-2 rounded-lg w-52 mt-4" />
               </div>
               <div className="border border-blue-200 rounded-lg md:p-7 py-7 flex flex-col gap-8 items-center shadow-lg shadow-blue-300">
-                <h3 className="text-2xl font-semibold text-blue-600">
+                <h3 className="text-2xl font-semibold text-blue-500">
                   Skills & Expertise
                 </h3>
                 <div className="flex items-center justify-center flex-wrap gap-3">

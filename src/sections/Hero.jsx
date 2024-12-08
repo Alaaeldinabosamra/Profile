@@ -37,6 +37,7 @@ function Hero() {
               >
                 Preview CV
               </a>
+              <button>Surprize</button>
             </div>
           </div>
           <div

@@ -12,7 +12,9 @@ import Contact from "./sections/Contact.jsx";
 function App() {
   return (
     <main className="max-w-7xl mx-auto relative">
-      <Particle />
+      <div className="hidden lg:block">
+        <Particle />
+      </div>
       <Navbar />
       <Hero />
       <About />
