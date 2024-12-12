@@ -3,6 +3,7 @@ import profile from "../../public/assets/avatar4.png";
 import hoverProfile from "../../public/assets/avatar3.png";
 function Hero() {
   const [image, setImage] = useState(profile);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to toggle dropdown visibility
 
   // Function to handle mouse enter (change image to hoverProfile)
   const handleMouseEnter = () => {
@@ -12,6 +13,26 @@ function Hero() {
   // Function to handle mouse leave (change image back to profile)
   const handleMouseLeave = () => {
     setImage(profile);
+  };
+
+  // Function to handle CV download based on type
+  const handleCVDownload = (cvType) => {
+    if (cvType === "frontend") {
+      // CV for Frontend
+      window.open(
+        "https://drive.google.com/file/d/1PY-cj38hAPv7ABJCjptIVxe7wmRgjIJF/view?usp=sharing",
+        "_blank"
+      );
+    } else if (cvType === "backend") {
+      // CV for Backend
+      window.open(
+        "https://drive.google.com/file/d/1bjlpAlIvVu-BQMMEbvYUfhxxLkGhXy34/view?usp=sharing",
+        "_blank"
+      );
+    }
+  };
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
   return (
     <section className="c-space mt-20 relative" id="home">
@@ -30,14 +51,32 @@ function Hero() {
               </p>
             </h1>
             <div className="flex space-x-4">
-              <a
-                href="https://drive.google.com/file/d/1n8hp80fR9YRRxkqZ5hSJvAP20u8E6utv/view?usp=drive_link" // Replace with your actual file path or URL
-                download="CV-1.pdf" // Optional: provide a default name for the file
-                className="bg-blue-600 text-white px-3 py-2 w-max rounded-md"
-              >
-                Preview CV
-              </a>
-              <button>Surprize</button>
+              {/* Dropdown Button for CV */}
+              <div className="relative">
+                <button
+                  onClick={toggleDropdown} // Toggle dropdown visibility on click
+                  className="bg-blue-600 text-white px-4 py-2 rounded-md"
+                >
+                  Download CV
+                </button>
+                {/* Dropdown Menu */}
+                {isDropdownOpen && (
+                  <div className="absolute mt-2 right-0 w-48 bg-black shadow-lg rounded-md z-10">
+                    <button
+                      onClick={() => handleCVDownload("frontend")}
+                      className="block w-full text-center px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-md"
+                    >
+                      Frontend CV
+                    </button>
+                    <button
+                      onClick={() => handleCVDownload("backend")}
+                      className="block w-full text-center px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-md mt-2"
+                    >
+                      Backend CV
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
           <div

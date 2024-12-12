@@ -58,10 +58,10 @@ export const carouselVideos = [
   },
   {
     id: 2,
-    videoId: "J---aiyznGQ", // Another YouTube video ID
-    title: "Second slide label",
+    videoId: "wH3Wlq-ovkE", // Another YouTube video ID
+    title: "AI Chat prompt",
     description:
-      "Some representative placeholder content for the second slide.",
+      "using react and node js and google ai model for building chat ai app",
   },
   // Add more video objects as needed
 ];
@@ -127,5 +127,12 @@ export const projectJson = [
     image: "/assets/mockup.png",
     live: "https://mockup-blush.vercel.app/",
     github: "https://github.com/Alaaeldinabosamra/Mockup.git",
+  },
+  {
+    title: "AI App",
+    desc: "this application small scale of Chatgpt platform using Gemini Model ",
+    image: "/assets/ai.png",
+    live: "https://ai-alaa.vercel.app/",
+    github: "https://github.com/Alaaeldinabosamra/AI.git",
   },
 ];

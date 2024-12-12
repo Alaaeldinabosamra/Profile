@@ -3,8 +3,12 @@ import Github from "../../public/assets/Github.png";
 
 const Cards = ({ item }) => {
   return (
-    <div className="rounded-lg bg-black-200 border border-black-300 w-[350px] lg:w-[400px]">
-      <img src={item.image} alt="" className="rounded-lg" />
+    <div className="rounded-lg  bg-black-200 border border-black-300  w-[350px] lg:w-[400px]">
+      <img
+        src={item.image}
+        alt=""
+        className="rounded-lg w-full h-full object-cover"
+      />
       <div className="p-4">
         <h1 className="font-semibold text-xl mb-2 text-white-600">
           {item.title}
