@@ -55,13 +55,13 @@ function Hero() {
               <div className="relative">
                 <button
                   onClick={toggleDropdown} // Toggle dropdown visibility on click
-                  className="bg-blue-600 text-white px-4 py-2 rounded-md"
+                  className="bg-blue-600 text-white w-36 px-4 py-2 rounded-md"
                 >
                   Download CV
                 </button>
                 {/* Dropdown Menu */}
                 {isDropdownOpen && (
-                  <div className="absolute mt-2 right-0 w-48 bg-black shadow-lg rounded-md z-10">
+                  <div className="absolute mt-2 right-0 w-36 bg-black shadow-lg rounded-md z-10">
                     <button
                       onClick={() => handleCVDownload("frontend")}
                       className="block w-full text-center px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-md"
